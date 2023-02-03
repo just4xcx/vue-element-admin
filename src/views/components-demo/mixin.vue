@@ -12,21 +12,6 @@
             </router-link>
           </el-col>
           <el-col :span="4" class="text-center">
-            <router-link class="pan-btn light-blue-btn" to="/icon/index">
-              Icons
-            </router-link>
-          </el-col>
-          <el-col :span="4" class="text-center">
-            <router-link class="pan-btn pink-btn" to="/excel/export-excel">
-              Excel
-            </router-link>
-          </el-col>
-          <el-col :span="4" class="text-center">
-            <router-link class="pan-btn green-btn" to="/table/complex-table">
-              Table
-            </router-link>
-          </el-col>
-          <el-col :span="4" class="text-center">
             <router-link class="pan-btn tiffany-btn" to="/example/create">
               Form
             </router-link>
@@ -95,19 +80,6 @@
         </el-card>
       </el-col>
     </el-row>
-
-    <el-row :gutter="20" style="margin-top:50px;">
-      <el-col :span="8">
-        <el-card class="box-card">
-          <div slot="header" class="clearfix">
-            <span>Share</span>
-          </div>
-          <div class="component-item" style="height:420px;">
-            <dropdown-menu :items="articleList" style="margin:0 auto;" title="系列文章" />
-          </div>
-        </el-card>
-      </el-col>
-    </el-row>
   </div>
 </template>
 
@@ -115,7 +87,6 @@
 import PanThumb from '@/components/PanThumb'
 import MdInput from '@/components/MDinput'
 import Mallki from '@/components/TextHoverEffect/Mallki'
-import DropdownMenu from '@/components/Share/DropdownMenu'
 import waves from '@/directive/waves/index.js' // 水波纹指令
 
 export default {
@@ -123,8 +94,7 @@ export default {
   components: {
     PanThumb,
     MdInput,
-    Mallki,
-    DropdownMenu
+    Mallki
   },
   directives: {
     waves
