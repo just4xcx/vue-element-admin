@@ -101,6 +101,8 @@ npm run lint -- --fix
 Refer to [Documentation](https://panjiachen.github.io/vue-element-admin-site/guide/essentials/deploy.html) for more information
 
 ## Changelog
+
 1 删除不用组件和页面
+
 2 修改README
 
