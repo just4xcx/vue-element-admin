@@ -22,3 +22,24 @@ export function logout() {
     method: 'get'
   })
 }
+
+export function getRoles() {
+  return request({
+    url: '/user/roles',
+    method: 'get'
+  })
+}
+
+export function getUsers() {
+  return request({
+    url: '/user/get_users',
+    method: 'get'
+  })
+}
+
+export function getDomains() {
+  return request({
+    url: '/user/get_domains',
+    method: 'get'
+  })
+}

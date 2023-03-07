@@ -154,6 +154,15 @@ export const asyncRoutes = [
           title: '角色'
           // if do not set roles, means: this page does not require permission
         }
+      },
+      {
+        path: 'domain',
+        component: () => import('@/views/system-mgr/domain/index'),
+        name: 'sys_mgr_domain',
+        meta: {
+          title: '域'
+          // if do not set roles, means: this page does not require permission
+        }
       }
     ]
   },

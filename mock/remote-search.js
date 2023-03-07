@@ -34,7 +34,7 @@ module.exports = [
     type: 'get',
     response: _ => {
       return {
-        code: 20000,
+        result: 0,
         data: {
           total: 20,
           'items|20': [{
